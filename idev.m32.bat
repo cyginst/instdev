@@ -14,13 +14,7 @@ set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-gdb
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt5
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt-creator
 if exist "%ProgramFiles(x86)%" (
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt5-static
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-x86_64-binutils
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-x86_64-gcc
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-x86_64-make
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-x86_64-gdb
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw64/mingw-w64-x86_64-qt5
-  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw64/mingw-w64-x86_64-qt5-static
+  set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt5-static,  mingw-w64-x86_64-binutils,  mingw-w64-x86_64-gcc,  mingw-w64-x86_64-make,  mingw-w64-x86_64-gdb,  mingw-w64-x86_64-qt5,  mingw-w64-x86_64-qt5-static
   set MSYS2_USE_MINGW64=1
   set DT_ICONS=1
 )
