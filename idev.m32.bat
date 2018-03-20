@@ -5,7 +5,6 @@ REM --- EDIT THIS PART(START) ---
 set MSYS2_NAME=idev
 set MSYS2_BITS=32
 set MSYS2_PKGS=diffutils,procps,psmisc,tmux,vim
-::set MSYS2_PKGS=%MSYS2_PKGS%,  emacs,glib2,libhogweed
 set MSYS2_PKGS=%MSYS2_PKGS%,  emacs
 ::set MSYS2_PKGS=%MSYS2_PKGS%,  curl,wget,git,subversion,zip,unzip
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-binutils
