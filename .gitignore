@@ -4,3 +4,7 @@
 .binaries
 root
 ms2inst.bat
+.gitconfig
+.viminfo
+build-*
+*.pro.user
