@@ -8,6 +8,7 @@ QT       += widgets network script scripttools
 
 TARGET = dll001
 TEMPLATE = lib
+CONFIG += shared
 
 DEFINES += DLL001_LIBRARY
 
