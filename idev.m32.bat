@@ -13,6 +13,8 @@ set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-make
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-gdb
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt5
 set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt-creator
+set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-tools-git
+set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-x86_64-tools-git
 if exist "%ProgramFiles(x86)%" (
   set MSYS2_PKGS=%MSYS2_PKGS%,  mingw-w64-i686-qt5-static,  mingw-w64-x86_64-binutils,  mingw-w64-x86_64-gcc,  mingw-w64-x86_64-make,  mingw-w64-x86_64-gdb,  mingw-w64-x86_64-qt5,  mingw-w64-x86_64-qt5-static
   set MSYS2_USE_MINGW64=1
