@@ -1,0 +1,6 @@
+*.m32
+*.m64
+.bash_history
+.binaries
+root
+ms2inst.bat
