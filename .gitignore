@@ -8,3 +8,5 @@ ms2inst.bat
 .viminfo
 build-*
 *.pro.user
+/examples
+/textureandlight.exe
