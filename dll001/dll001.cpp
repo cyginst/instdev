@@ -1,5 +1,7 @@
 #include "dll001.h"
 
+#include "QtScript"
+
 
 Dll001::Dll001()
 {
@@ -45,6 +47,13 @@ extern "C" __declspec(dllexport) void CALLBACK runServer(HWND hwnd, HINSTANCE hi
     Q_UNUSED(nCmdShow);
     std::vector<wchar_t *> args;
     init_rundll_pg(args);
+    int argc = 0;
+    //system("pause");
+    QCoreApplication app(argc, NULL);
+    QScriptEngine engine;
+    QString script("1+2"), result;
+    result = engine.evaluate( script ).toString();
+    qDebug() << "result=" << result;
     system("pause");
     return;
 }
