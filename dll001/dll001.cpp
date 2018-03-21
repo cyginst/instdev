@@ -1,7 +1,7 @@
 #include "dll001.h"
 
+#include "QtNetwork"
 #include "QtScript"
-
 
 Dll001::Dll001()
 {
@@ -54,6 +54,16 @@ extern "C" __declspec(dllexport) void CALLBACK runServer(HWND hwnd, HINSTANCE hi
     QString script("1+2"), result;
     result = engine.evaluate( script ).toString();
     qDebug() << "result=" << result;
+    QNetworkAccessManager nam;
+    QUrl url("https://raw.githubusercontent.com/cyginst/ms2inst-v1/master/my-git-setup.bat");
+    QNetworkRequest request(url);
+    QNetworkReply *reply = nam.get(request);
+    while (!reply->isFinished())
+    {
+        app.processEvents(QEventLoop::ExcludeUserInputEvents);
+    }
+    QByteArray bytes = reply->readAll();
+    qDebug() << bytes;
     system("pause");
     return;
 }
