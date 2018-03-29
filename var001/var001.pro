@@ -37,3 +37,5 @@ FORMS += \
 
 
 #QMAKE_CXXFLAGS += -std=c++1z
+
+QMAKE_LIBS += libgc
