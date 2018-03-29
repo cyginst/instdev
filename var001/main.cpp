@@ -17,8 +17,12 @@ struct var_printer : boost::static_visitor<void> {
 #include "gc_cpp.h"
 #include <iostream>
 
-class hoe : public gc{
+class hoe : public gc_cleanup{
+public:
   char p[0x100];
+  virtual ~hoe() {
+      std::cout << "~hoe()" << std::endl;
+  }
 };
 
 int main()
