@@ -10,3 +10,4 @@ build-*
 *.pro.user
 /examples
 /textureandlight.exe
+/*.lnk
