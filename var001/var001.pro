@@ -26,16 +26,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp
-
-HEADERS += \
-        mainwindow.h
-
-FORMS += \
-        mainwindow.ui
-
-
-#QMAKE_CXXFLAGS += -std=c++1z
+        main.cpp
 
 QMAKE_LIBS += libgc
+
+QMAKE_LFLAGS += -static

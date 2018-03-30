@@ -11,3 +11,8 @@ build-*
 /examples
 /textureandlight.exe
 /*.lnk
+.qmake.stash
+Makefile*
+release
+debug
+ui_*.h
